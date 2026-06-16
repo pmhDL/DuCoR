@@ -4,15 +4,13 @@
 
 Medical visual question answering models often face potential train-test distribution shifts that hinder generalization across unseen imaging and linguistic patterns. To address this challenge, we propose a dual-level confidence based framework (DuCoR) that achieves implicit self-refinement through iterative pseudo-supervised optimization. Instead of relying on fixed pseudo answers, the model progressively refines its predictions by estimating their reliability from two complementary perspectives. A loss-level confidence captures the reliability of supervision by modeling clean and noisy loss distributions, while a feature-level confidence measures the semantic coherence between sample representations and their pseudo-answer conditioned prototypes. Since these two confidences originate from distinct information sources, including the supervision signal and the input semantics, they provide mutually corrective cues. They are adaptively fused to derive per-sample reliability weights that guide pseudo-supervised optimization toward better alignment with the target distribution. Extensive experiments on multiple medical VQA benchmarks show that our method achieves superior performance and exhibits improved cross-domain generalization over fully supervised baseline.
 
-## Main Figure
-
 ![DuCoR overview](framework/Fig1.png)
 
 
 ## Runtime Environment
 
 - Python: `3.9.23`.
-Key Python packages:
+- Key Python packages:
 
 | Package | Version |
 | --- | --- |
@@ -43,16 +41,16 @@ Key Python packages:
 
 Pretraining data:
 
-- **Download the medical alignment/instruction data from**: https://github.com/microsoft/LLaVA-Med
+- Download the medical alignment/instruction data from [LLaVA-Med](https://github.com/microsoft/LLaVA-Med)
 
 - Run down_image.py to download PMC images, and set the local paths with --pretrain_data_path and --pretrain_image_root.
 
 
 Medical VQA benchmarks:
 
-- **VQA-RAD**: https://www.nature.com/articles/sdata2018251
-- **SLAKE**: https://arxiv.org/abs/2102.09542
-- **PathVQA**: https://arxiv.org/abs/2003.10286
+- **[VQA-RAD](https://www.nature.com/articles/sdata2018251)**
+- **[SLAKE](https://arxiv.org/abs/2102.09542)**
+- **[PathVQA](https://arxiv.org/abs/2003.10286)** 
 
 Place all datasets under the `data/` folder.
 
