@@ -19,7 +19,7 @@ Pretraining data:
 
 - Download the medical alignment/instruction data from [LLaVA-Med](https://github.com/microsoft/LLaVA-Med)
 
-- Run 'down_image.py' to download PMC images, and set the local paths with --pretrain_data_path and --pretrain_image_root.
+- Run `down_image.py` to download PMC images, and set the local paths with --pretrain_data_path and --pretrain_image_root.
 
 
 Medical VQA benchmarks:
