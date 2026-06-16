@@ -7,11 +7,10 @@ Medical visual question answering models often face potential train-test distrib
 
 ## Runtime Environment
 
-<sub>
 Python: `3.9.23`
 
 Key packages:
-`torch==2.5.1`, `torchvision==0.15.2a0`, `torchaudio==2.5.1`, `transformers==4.49.0`, `accelerate==1.9.0`, `deepspeed==0.16.7`, `peft==0.15.2`, `timm==1.0.19`, `sentencepiece==0.2.0`, `numpy==1.26.4`, `scipy==1.13.1`, `scikit-learn==1.6.1`, `Pillow==11.1.0`, `opencv-python==4.10.0`, `pandas==2.2.3`, `matplotlib==3.9.2`, `tokenizers==0.21.4.dev0`, `safetensors==0.5.3`, `nltk==3.9.1`, `tqdm==4.67.1`, `bert-score==0.3.9`, `requests==2.32.4`. </sub>
+`torch==2.5.1`, `torchvision==0.15.2a0`, `torchaudio==2.5.1`, `transformers==4.49.0`, `accelerate==1.9.0`, `deepspeed==0.16.7`, `peft==0.15.2`, `timm==1.0.19`, `sentencepiece==0.2.0`, `numpy==1.26.4`, `scipy==1.13.1`, `scikit-learn==1.6.1`, `Pillow==11.1.0`, `opencv-python==4.10.0`, `pandas==2.2.3`, `matplotlib==3.9.2`, `tokenizers==0.21.4.dev0`, `safetensors==0.5.3`, `nltk==3.9.1`, `tqdm==4.67.1`, `bert-score==0.3.9`, `requests==2.32.4`.
 
 
 ## Datasets
