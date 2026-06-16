@@ -1,7 +1,5 @@
 # DuCoR: Dual-Level Confidence Self-Refinement for Medical VQA
 
-## Abstract
-
 Medical visual question answering models often face potential train-test distribution shifts that hinder generalization across unseen imaging and linguistic patterns. To address this challenge, we propose a dual-level confidence based framework (DuCoR) that achieves implicit self-refinement through iterative pseudo-supervised optimization. Instead of relying on fixed pseudo answers, the model progressively refines its predictions by estimating their reliability from two complementary perspectives. A loss-level confidence captures the reliability of supervision by modeling clean and noisy loss distributions, while a feature-level confidence measures the semantic coherence between sample representations and their pseudo-answer conditioned prototypes. Since these two confidences originate from distinct information sources, including the supervision signal and the input semantics, they provide mutually corrective cues. They are adaptively fused to derive per-sample reliability weights that guide pseudo-supervised optimization toward better alignment with the target distribution. Extensive experiments on multiple medical VQA benchmarks show that our method achieves superior performance and exhibits improved cross-domain generalization over fully supervised baseline.
 
 ![DuCoR overview](framework/Fig1.png)
@@ -9,33 +7,12 @@ Medical visual question answering models often face potential train-test distrib
 
 ## Runtime Environment
 
-- Python: `3.9.23`.
-- Key Python packages:
+<sub>
+Python: `3.9.23`
 
-| Package | Version |
-| --- | --- |
-| `torch` | `2.5.1` |
-| `torchvision` | `0.15.2a0` |
-| `torchaudio` | `2.5.1` |
-| `transformers` | `4.49.0` |
-| `accelerate` | `1.9.0` |
-| `deepspeed` | `0.16.7` |
-| `peft` | `0.15.2` |
-| `timm` | `1.0.19` |
-| `sentencepiece` | `0.2.0` |
-| `numpy` | `1.26.4` |
-| `scipy` | `1.13.1` |
-| `scikit-learn` | `1.6.1` |
-| `Pillow` | `11.1.0` |
-| `opencv-python` | `4.10.0` |
-| `pandas` | `2.2.3` |
-| `matplotlib` | `3.9.2` |
-| `tokenizers` | `0.21.4.dev0` |
-| `safetensors` | `0.5.3` |
-| `nltk` | `3.9.1` |
-| `tqdm` | `4.67.1` |
-| `bert-score` | `0.3.9` |
-| `requests` | `2.32.4` |
+Key packages:
+`torch==2.5.1`, `torchvision==0.15.2a0`, `torchaudio==2.5.1`, `transformers==4.49.0`, `accelerate==1.9.0`, `deepspeed==0.16.7`, `peft==0.15.2`, `timm==1.0.19`, `sentencepiece==0.2.0`, `numpy==1.26.4`, `scipy==1.13.1`, `scikit-learn==1.6.1`, `Pillow==11.1.0`, `opencv-python==4.10.0`, `pandas==2.2.3`, `matplotlib==3.9.2`, `tokenizers==0.21.4.dev0`, `safetensors==0.5.3`, `nltk==3.9.1`, `tqdm==4.67.1`, `bert-score==0.3.9`, `requests==2.32.4`. </sub>
+
 
 ## Datasets
 
@@ -48,9 +25,9 @@ Pretraining data:
 
 Medical VQA benchmarks:
 
-- **[VQA-RAD](https://www.nature.com/articles/sdata2018251)**
-- **[SLAKE](https://arxiv.org/abs/2102.09542)**
-- **[PathVQA](https://arxiv.org/abs/2003.10286)** 
+- [VQA-RAD](https://www.nature.com/articles/sdata2018251)
+- [SLAKE](https://arxiv.org/abs/2102.09542)
+- [PathVQA](https://arxiv.org/abs/2003.10286)
 
 Place all datasets under the `data/` folder.
 
